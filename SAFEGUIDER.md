@@ -32,14 +32,14 @@ OLD PROBLEM: 오래된 문제 => **오래전부터 해결되지 않았던 사회
 #### How to improve?
 
 - *A1:* 비상유도등에 탈출 해야할 방향을 알려주는 유도등을 추가로 부착
-  - ![emer](images\emer.png)
+  - ![](images/emer.png)
 - *A2:* 블루투스 비콘 3개를 이용하여 현재 건물 내에서 어디에 사람이 있는지 알려줌
   - ![](images/Mylocation.png)
   - 이와 상황에서 **삼각측량법**을 이용하여 거리를 구할 수 있다.
 
 ##### 삼각 측량법이란?
 
-![](images\won.png)
+![](images/won.png)
 
 이와 같은 상황에서, 피타고라스 정리를 사용
 $$
@@ -88,7 +88,7 @@ $$
 ## *A2:* 건물 내부에 사람이 있는지 감지 Solution - 후순위
 
 - 먼저 사진을 보자.
-- ![A2](C:\Users\itsmysurport\workspace\2019-Spring-Appjam\What-s-Title\images\A2.png)
+- ![A2](images/A2.png)
 
 
 
@@ -111,7 +111,7 @@ $$
 
 - 불이 났을때 > 구조요청 화면으로 바뀜 > 그때 구조요청을 하시겠습니까? 라는 문구 띄워짐 (안드로이드) 
 - 방 그림에 빨간점으로 구조자의 위치를 알 수 있음
-  - ex) ![won](images\room.png)
+  - ex) ![won](images/room.png)
 
 ## *A3:* 화재 예방 Solution
 
@@ -134,5 +134,5 @@ $$
 #### 디자인(A3)(1층)
 
 - 온도 습도 알려주고 상태 알려줌 (안드로이드, Qt)
-  - QT EX)![list](images\list.png)
+  - QT EX)![list](images/list.png)
 
