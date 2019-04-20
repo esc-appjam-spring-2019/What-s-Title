@@ -1,8 +1,14 @@
 <RCC>
-    <qresource prefix="/MainImage">
-        <file>C:/Users/user/Desktop/Image/1.png</file>
-        <file>C:/Users/user/Desktop/Image/undraw_confirmation_2_uy_0.png</file>
-        <file>C:/Users/user/Desktop/Image/24.png</file>
-        <file>C:/Users/user/Desktop/Image/25.png</file>
+    <qresource prefix="/">
+        <file>res/1.png</file>
+        <file>res/24.png</file>
+        <file>res/25.png</file>
+        <file>res/28.png</file>
+        <file>res/29.png</file>
+        <file>res/delete.png</file>
+        <file>res/undraw_confirmation_2_uy_0.png</file>
+        <file>main.cpp</file>
+        <file>safe.cpp</file>
+        <file>safe.h</file>
     </qresource>
 </RCC>
