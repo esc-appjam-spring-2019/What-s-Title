@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/MainImage">
+        <file>C:/Users/user/Desktop/Image/1.png</file>
+        <file>C:/Users/user/Desktop/Image/undraw_confirmation_2_uy_0.png</file>
+        <file>C:/Users/user/Desktop/Image/24.png</file>
+        <file>C:/Users/user/Desktop/Image/25.png</file>
+    </qresource>
+</RCC>

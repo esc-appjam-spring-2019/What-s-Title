@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Safe</class>
+ <widget class="QWidget" name="Safe">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Safe</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(246, 246, 247);</string>
+  </property>
+  <widget class="QStackedWidget" name="Stacked">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>32</y>
+     <width>800</width>
+     <height>447</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="MainPage">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QFrame" name="MainImage">
+     <property name="geometry">
+      <rect>
+       <x>303</x>
+       <y>46</y>
+       <width>195</width>
+       <height>162</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/MainImage/C:/Users/user/Desktop/Image/1.png);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Title">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>230</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 81 13pt &quot;Raleway&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Safe Guider</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>260</y>
+       <width>321</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 8pt &quot;나눔스퀘어&quot;;
+color: #C3CCCD</string>
+     </property>
+     <property name="text">
+      <string> Safe Guider는 화재 발생 원인이 존재하는지 알려줍니다. 
+ 또한, 화재 발생시 대피 경로를 알려주며, 탈출이 어려울 시
+     에는 위치를 추적하여 내 위치를 알려줄 수 있습니다.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BluePair">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>360</y>
+       <width>260</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(109, 116, 204);
+border-radius: 23px;
+font: 75 10pt &quot;나눔스퀘어 Bold&quot;;
+color: rgb(255,255,255);</string>
+     </property>
+     <property name="text">
+      <string>블루투스 페어링 연결</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="SetLoc">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>360</y>
+       <width>260</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 23px;
+font: 75 10pt &quot;나눔스퀘어 Bold&quot;;
+color: rgb(0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>직접 위치 등록하기</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SetAdrPage">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QFrame" name="ConnectImage">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>150</y>
+       <width>283</width>
+       <height>186</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/MainImage/C:/Users/user/Desktop/Image/undraw_confirmation_2_uy_0.png);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BlueRect">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>78</y>
+       <width>7</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(109, 116, 204);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>71</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 14pt &quot;나눔스퀘어 Bold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>직접 위치 설정하기</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>446</x>
+       <y>167</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 9pt &quot;나눔스퀘어 Bold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>집주소를 입력해주세요</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>446</x>
+       <y>197</y>
+       <width>300</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어</family>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(248, 248, 248);
+font: 8pt &quot;나눔스퀘어&quot;;
+border-radius: 5px</string>
+     </property>
+     <property name="placeholderText">
+      <string> 세부 주소를 써주세요</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>597</x>
+       <y>257</y>
+       <width>121</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 20px;
+font: 75 9pt &quot;나눔스퀘어 Bold&quot;;
+color: rgb(0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>취소하기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>466</x>
+       <y>257</y>
+       <width>121</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(109, 116, 204);
+border-radius: 20px;
+font: 75 9pt &quot;나눔스퀘어 Bold&quot;;
+color: rgb(255,255,255);</string>
+     </property>
+     <property name="text">
+      <string>등록하기</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="BluePage">
+    <widget class="QFrame" name="ConnectImage_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>150</y>
+       <width>283</width>
+       <height>186</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/MainImage/C:/Users/user/Desktop/Image/undraw_confirmation_2_uy_0.png);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="SelectedDivice">
+     <property name="geometry">
+      <rect>
+       <x>446</x>
+       <y>177</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어</family>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(248, 248, 248);
+font: 8pt &quot;나눔스퀘어&quot;;
+border-radius: 5px</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+     <property name="cursorMoveStyle">
+      <enum>Qt::LogicalMoveStyle</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>71</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 14pt &quot;나눔스퀘어 Bold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>블루투스 페어링 연결</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BlueRect_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>78</y>
+       <width>7</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(109, 116, 204);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>446</x>
+       <y>147</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 9pt &quot;나눔스퀘어 Bold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>등록기기</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>446</x>
+       <y>216</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 9pt &quot;나눔스퀘어 Bold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>기타기기</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>70</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 9pt &quot;나눔스퀘어 Bold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Bluetooth</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="DeviceList">
+     <property name="geometry">
+      <rect>
+       <x>446</x>
+       <y>240</y>
+       <width>261</width>
+       <height>96</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(248, 248, 248);
+font: 8pt &quot;나눔스퀘어&quot;;
+border-radius: 5px;
+margin: 2px;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="TempPage">
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>780</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 8px;
+font: 75 9pt &quot;나눔스퀘어 Bold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Temp">
+     <property name="geometry">
+      <rect>
+       <x>219</x>
+       <y>105</y>
+       <width>167</width>
+       <height>246</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/MainImage/C:/Users/user/Desktop/Image/24.png);</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>140</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 81 9pt &quot;Raleway&quot;;
+color: rgb(255,255,255);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string>Temperature</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="Bar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(109, 116, 204);
+font: 25 9pt &quot;Raleway&quot;;
+color: #ffffff</string>
+   </property>
+   <property name="text">
+    <string>   Safe Guider</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
